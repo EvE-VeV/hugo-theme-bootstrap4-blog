@@ -1,5 +1,5 @@
 {{ $cookieConsentScript := resources.Get "js/haven.umd.min.js" | resources.Fingerprint }}
-<script src="{{ $cookieConsentScript.Permalink }}"{{ if not .Site.Params.disable_sri }} integrity="{{ $cookieConsentScript.Data.Integrity }}" crossorigin="anonymous"{{ end }}></script>
+<script src="{{ $cookieConsentScript.Permalink }}"{{ if not .Site.Params.disable_sri }} integrity="" crossorigin="anonymous"{{ end }}></script>
 
 <script>
 Haven.create({
